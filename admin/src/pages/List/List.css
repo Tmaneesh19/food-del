@@ -1,0 +1,108 @@
+.list {
+    width: 90%;
+    margin: 50px auto;
+    color: #4A4A4A;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background: #f5f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.list p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-table-format {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.list-table-format:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.list-table-format img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+}
+
+.list-table-format p {
+    font-size: 16px;
+    color: #4A4A4A;
+    text-align: center;
+    flex: 1;
+}
+
+.list-table-format .cursor {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.list-table-format .cursor:hover {
+    color: #d32f2f;
+    transform: scale(1.2);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    background: #e3f2fd;
+    color: #1e88e5;
+    border: 2px solid #1e88e5;
+    text-transform: uppercase;
+}
+
+.title b {
+    flex: 1;
+    text-align: center;
+}
+
+.list-table-format b {
+    text-align: center;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .list-table-format {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .list-table-format p, .list-table-format b {
+        flex: none;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .list-table-format img {
+        margin-bottom: 10px;
+    }
+}

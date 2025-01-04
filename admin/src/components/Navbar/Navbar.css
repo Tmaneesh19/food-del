@@ -1,0 +1,45 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Glorious gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Elegant shadow effect */
+    border-radius: 8px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* Subtle hover effect for the logo */
+  }
+  
+  h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+  
+  .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile:hover {
+    transform: rotate(360deg) scale(1.1); /* Fabulous hover effect for profile image */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+  

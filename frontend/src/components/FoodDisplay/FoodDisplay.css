@@ -1,0 +1,116 @@
+.food-display{
+    margin-top: 30px;
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.food-display{
+    margin-top: 30px;
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+.food-display-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.no-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    background-color: #1c1c2b; /* A subtle dark background */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Glorious shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .no-items:hover {
+    transform: scale(1.05); /* Slight hover zoom effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .no-items img {
+    width: 250px; /* Make the image stand out */
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2)); /* Glorious light shadow for image */
+    opacity: 0.9; /* Slightly faded for elegance */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .no-items img:hover {
+    opacity: 1; /* Bring image fully into view on hover */
+    transform: rotate(-2deg) scale(1.02); /* Add a slight rotation and scale on hover */
+  }
+  
+  .no-items p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffa500; /* Bright, fabulous orange text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background: -webkit-linear-gradient(45deg, #ffdd00, #fbb034, #ffdd00); /* Gradient text for fabulous look */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .no-items p:hover {
+    text-shadow: 0 0 10px #fbb034, 0 0 20px #ffdd00; /* Glowing text effect on hover */
+  }
+  
+  .food-display-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure it takes up full height for centering */
+    flex-wrap: wrap; /* For fallback flexibility in case of resizing */
+  }
+  
+  .no-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Ensure it is centered horizontally */
+    background-color: #1c1c2b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .no-items img {
+    width: 200px; /* Adjust size to fit nicely */
+    height: auto;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2));
+  }
+  
+  .no-items p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffa500;
+    margin: 0;
+  }
+  
