@@ -13,7 +13,8 @@ const Navbar = ({ setShowLogin }) => {
   const logout = () => {
     localStorage.removeItem("token");
     setToken("");
-    navigate('/')
+    navigate("/");
+    window.location.reload();
   }
 
   return (
